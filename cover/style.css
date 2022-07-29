@@ -125,3 +125,9 @@ html, body {
     padding-left: 15%;
   }
 }
+#open_button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding: 5%;
+  color: #1E352F;
+}
