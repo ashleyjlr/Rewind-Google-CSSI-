@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+html, body {
+  height: 100%;
+/*   width: 100%; */
+}
+#navbar_section{
+  position: absolute !important;
+  z-index: 100;
+  width: 96%;
+  background-color: #92B4A7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  top: 0;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+#logo_pic{
+  width: 5%;
+  height: 5%;
+}
+#logo{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#welcome_section{
+  height: 100vh;
+  width: 105%;
+  background-color: #92B4A7;
+  color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#welcome_name{
+  height: 100vh;
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Concert One', cursive;
+  line-height: 0.05px;
+}
+#rewind_title{
+  font-size: 90px;
+}
+#rewind_slogan{
+  font-size: 60px;
+}
+#click{
+  position: absolute;
+  left: 80%;
+  top: 80%;
+}
+#welc_word{
+  position: absolute;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  font-size: 40px;
+  font-family: 'Archivo', sans-serif;
+  
+
+/*   -webkit-animation: bounce 1.2s ease-out;
+	-moz-animation: bounce 800ms ease-out;
+	-o-animation: bounce 800ms ease-out; */
+	animation: bounce 2s ease-in-out forwards;
+/*   animation: bounce 2s cubic-bezier(0.46,-0.25, 0.61, 1.23) forwards; */
+}
+@keyframes bounce {
+  0%{
+    transform:translateY(-100%);
+    opacity: 10%;
+  }
+  10%{
+    transform:translateX(-10%);
+  }
+  50%{
+    transform:translateX(-5%);
+    transform:translateY(-50%);
+  }
+  51%{
+    transform:translateX(-5%);
+    transform:translateY(-53%);
+  }
+  53%{
+    transform:translateX(-5%);
+    transform:translateY(-56%);
+  }
+  60%{
+    transform:translateX(-5%);
+    transform:translateY(-56%);
+  }
+  70%{
+    transform:translateX(-15%);
+    transform:translateY(-20%);
+  }
+  73%{
+    transform:translateX(-16%);
+    transform:translateY(-20%);
+  }
+  90%{
+    transform:translateY(10%);
+  }
+  94%{
+    transform:translateY(0);
+  }
+  97%{
+    transform:translateY(8%);
+  }
+  100% {
+    transform:translateY(0);
+    opacity: 1;
+    padding-left: 15%;
+  }
+}
