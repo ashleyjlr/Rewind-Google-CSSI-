@@ -4,7 +4,7 @@
 
 html, body {
   height: 100%;
-/*   width: 100%; */
+  width: 100%;
 }
 #navbar_section{
   position: absolute !important;
@@ -17,8 +17,8 @@ html, body {
   color: white;
   top: 0;
   left: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   font-family: 'Roboto', sans-serif;
 }
 #logo_pic{
@@ -33,7 +33,7 @@ html, body {
 }
 #welcome_section{
   height: 100vh;
-  width: 105%;
+  width: 100%;
   background-color: #92B4A7;
   color: white;
   z-index: 1;
@@ -41,10 +41,12 @@ html, body {
   left: 0;
 }
 #welcome_name{
+  top: 0;
+  left: 0;
   height: 100vh;
   position: absolute;
   padding-top: 5%;
-  padding-left: 15%;
+  padding-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +70,7 @@ html, body {
   display: flex;
   align-items: flex-end;
   top: 0;
+  left: 0;
   font-size: 40px;
   font-family: 'Archivo', sans-serif;
   
@@ -122,12 +125,74 @@ html, body {
   100% {
     transform:translateY(0);
     opacity: 1;
-    padding-left: 15%;
+    padding-left: 10%;
   }
 }
-#open_button{
+/* #open_button{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   padding: 5%;
   color: #1E352F;
+} */
+
+
+.wrapper{
+  position: fixed;
+/*   top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+}
+.link_wrapper{
+  position: relative;
+}
+
+#hov_buttton{
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #335145;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #335145;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #335145;
+  transition: all .35s;
+}
+
+#hov_buttton:hover{
+  width: 200px;
+  border: 3px solid #335145;
+  background: transparent;
+  color: #335145;
+}
+
+#hov_buttton:hover + .icon{
+  border: 3px solid #335145;
+  right: -25%;
 }
