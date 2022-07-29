@@ -165,5 +165,6 @@ html, body {
   border-bottom-left-radius: 25px;
 }
 .inactive:hover{
-  color: white;
+  color: white !important;
+  transition-duration: 0.3s;
 }
