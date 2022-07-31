@@ -7,8 +7,6 @@ menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
     sideBar.style.display = "flex";
-    // sideBar.style.flexDirection = "column";
-    // sideBar.style.justifyContent = "space-between";
     logoWord.style.color = "white";
     menuOpen = true;
   } else {

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Amatic SC', cursive;
 }
 #navbar_section{
   position: sticky;
@@ -19,6 +21,8 @@ html, body {
   top: 0;
   left: 0;
   padding: 2%;
+/*   padding-left: 2%;
+  padding-right: 2%;  */
   font-family: 'Roboto', sans-serif;
 }
 #logo_pic{
@@ -168,4 +172,54 @@ html, body {
 .inactive:hover{
   color: white !important;
   transition-duration: 0.3s;
+}
+#title{
+  text-align: center;
+  padding-top: 5%;
+  color: #335145;
+  font-size: 40px;
+}
+#note{
+  text-align: center;
+  color: #335145;
+  font-size: 20px;
+}
+#cardsSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 4% 5%;
+}
+.eachCard {
+  text-align: center;
+  color: #335145;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  border: 1px solid #335145;
+  background-color: #E9F1DF;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 9px 5px #777;
+  font-size: 20px;
+}
+.eachCard:hover {
+  box-shadow: 3px 12px 8px #999;
+  transform: translateY(-10px);
+}
+.eachCard button {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #92B4A7;
+  font-family: 'Amatic SC', cursive;
+  font-size: 18px;
+  width: 100%;
+}
+.eachCard button:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #335145;
+  color: white;
+  width: 100%;
 }
