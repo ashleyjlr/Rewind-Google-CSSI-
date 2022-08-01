@@ -12,16 +12,18 @@ html, body {
 #navbar_section{
   position: sticky;
   z-index: 100;
-  width: 100%;
+  width: 167.6vh;
+  margin: 0;
+  background-color: #92B4A7;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #335145;
+  color: white;
   top: 0;
   left: 0;
-  padding: 2%;
-/*   padding-left: 2%;
-  padding-right: 2%;  */
+/*   padding: 2%; */
+  padding-left: 2%;
+  padding-right: 2%;
   font-family: 'Roboto', sans-serif;
 }
 #logo_pic{
@@ -34,17 +36,19 @@ html, body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #335145;
+  color: white;
   gap: 10px;
 }
+
 #logo_words:hover{
-  color: #92B4A7; 
+  color: #335145; 
   transition-duration: 0.5s;
 }
 #sign{
   display: flex;
   align-items: center;
   gap: 30px;
+/*   margin-right: 300px; */
 }
 #signin{
   border-radius: 50px;
@@ -74,7 +78,7 @@ html, body {
   font-size: 16px;
 }
 #login:hover{
-  color: #92B4A7;
+  color: white;
   transition-duration: 0.3s;
 }
 #welcome_section{
