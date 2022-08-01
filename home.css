@@ -169,3 +169,10 @@ html, body {
   color: white !important;
   transition-duration: 0.3s;
 }
+#timer{
+  border: 1px solid #000;
+  padding: 2%;
+  margin: 10%;
+  border-radius: 20px;
+  background-color: #dce4d8;
+}
