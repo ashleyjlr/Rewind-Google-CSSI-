@@ -196,3 +196,9 @@ html, body {
 .contentCluster{
   font-size: 15px;
 }
+.selectedOff{
+  box-shadow: 0 0 5px 2px #666;
+}
+.selectedOn{
+  box-shadow: 0 0 5px 2px #666;
+}

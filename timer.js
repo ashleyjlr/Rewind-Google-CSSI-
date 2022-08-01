@@ -1,3 +1,5 @@
+// import { createNewUser } from './settings.js';
+
 let timerBox = document.querySelector("#countdown_timer");
 
 const countdown = () =>{
