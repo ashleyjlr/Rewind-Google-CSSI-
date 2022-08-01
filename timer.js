@@ -4,6 +4,7 @@ const countdown = () =>{
   const countDownTime = new Date("August 1, 2022 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = countDownTime - now;
+  
 
   const second = 1000;
   const minute = second * 60;

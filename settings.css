@@ -169,3 +169,30 @@ html, body {
   color: white !important;
   transition-duration: 0.3s;
 }
+
+.sectionName{
+  font-size: 30px;
+  padding-bottom: 2%;
+}
+.cards{
+  padding: 3% 10%;
+}
+.cardRow {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px;
+}
+
+.clusterCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+.contentCluster{
+  font-size: 15px;
+}

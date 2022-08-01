@@ -18,3 +18,29 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+// let offbuttons = document.querySelector("#customOffButton");
+// let onbuttons = document.querySelector("#customOnButton");
+// let askOff = document.querySelectorAll("#customOff");
+// let askOn = document.querySelectorAll("#customOn");
+
+// offbuttons.addEventListener("click", () => {
+//   console.log(askOff);
+//   askOff.innerHTML = `<div class="control">
+// // //   <input class="input is-hovered is-rounded" type="number" placeholder="Hovered input">
+// // // </div>`;
+//   console.log(askOff);
+// });
+
+const buttons = document.querySelectorAll(".customChangeButton");
+let askInput = document.querySelectorAll(".customButton");
+
+buttons.forEach((customChangeButton) => {
+  customChangeButton.addEventListener("click", () => {
+    askInput.innerHTML = `<div class="control">
+  <input class="input is-hovered is-rounded" type="number" placeholder="Hovered input">
+</div>`;
+    // askInput.innerHTML = "hello";
+    console.log(askInput);
+  });
+}); 
