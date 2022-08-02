@@ -197,8 +197,20 @@ html, body {
   font-size: 15px;
 }
 .selectedOff{
-  box-shadow: 0 0 5px 2px #666;
+  box-shadow: 0 0 10px 3px #A6C36F;
 }
 .selectedOn{
-  box-shadow: 0 0 5px 2px #666;
+  box-shadow: 0 0 10px 3px #A6C36F;
+}
+.offtimeButtons{
+  outline: none;
+  border-color: #A6C36F;
+  background-color: #DFEBC9;
+  border-radius: 20px;
+}
+.ontimeButtons{
+  outline: none;
+  border-color: #A6C36F;
+  background-color: #DFEBC9;
+  border-radius: 20px;
 }

@@ -12,7 +12,8 @@ html, body {
 #navbar_section{
   position: sticky;
   z-index: 100;
-  width: 167.6vh;
+/*   width: 167.6vh; */
+  width 100% vh;
   margin: 0;
   background-color: #92B4A7;
   display: flex;
