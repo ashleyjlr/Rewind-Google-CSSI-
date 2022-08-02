@@ -77,7 +77,6 @@ offButtons.forEach((offtimeButtons) => {
   //   offtimeButtons.classList.add("selectedOff");
   // }
   if (user.selection === false){
-    console.log("nihao")
     if (offtimeButtons.value == user.offTime){
       console.log("equal");
       offButtons.forEach((offtimeButtons) => {
@@ -183,10 +182,6 @@ onButtons.forEach((ontimeButtons) => {
   // }
 });
 
-
-console.log("ok click")
-    console.log(user);
-    console.log(userInfo);
 
 let on_input = document.querySelector("#onInput");
 let off_input = document.querySelector("#offInput");
