@@ -80,26 +80,3 @@ function TogglePlaySong () {
   }
 }
 
-function ChangeSong(next = true) {
-  if (next) {
-      current_song_index++;
-    next_song_index = current_song_index + 1;
-  
-     if (current_song_index > songs.length - 1) {
-        current_song_index = 0;
-        next_song_index = current_song_index + 1;
-  
-     }
-     if (next_song_index > songs.length - 1) {
-        next_song_index = 0;
-     }
-    
-  } else {
-      current_song_index--;
-      next_song_index = current_song_index + 1;
-
-      if (current_song_index < 0) {
-         current_song_index = songs.length - 1
-      }
-  }
-}
