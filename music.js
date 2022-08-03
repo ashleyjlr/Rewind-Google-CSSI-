@@ -17,15 +17,16 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-const song_img_el = document.getElementbyId('song_ image');
-const song_title_el = document.getElementById('song_title');
-const song_artist_el = document.getElementbyId('song_artist');
+window.onload = () => {
+const song_img_el = document.getElementbyId('song-image');
+const song_title_el = document.getElementById('song-title');
+const song_artist_el = document.getElementbyId('song-artist');
 const song_next_up_el = document.getElementById('song-next-up');
 
 const play_btn = document.getElementById('play-btn');
 const play_btn_icon = document.getElementById('play-icon');
 const prev_btn = document.getElementById('prev-btn');
-const next_btn = document.getElementById('next_btn');
+const next_btn = document.getElementById('next-btn');
 
 const audio_player = document.getElementId('music-player');
 
@@ -34,20 +35,22 @@ let next_song_index;
 
 let songs = [
   {
-    title: 'Somebody New',
-    artist: 'RYYZN',
-    song_path: 'music/somebody-new.mp3',
+    title: 'Miss Jagger (feat. Kamille)',
+    artist: 'Lotto Boyzz',
+    song_path: 'music/Miss Jagger.mp3',
     img_path: 'images/song-1.jpg'
   },
   {
-    title: 'On and On ft. Daniel Levi',
-    artist: 'Cartoon',
-    song_path: 'music/on-n-on.mp3',
+    title: 'Consideration (Feat. Sza)',
+    artist: 'Rihanna',
+    song_path: 'music/Consideration.mp3',
     img_path: 'images/song-2.jpg'
   }
 ]
 
 play_btn.addEventListener('click' , TogglePlaySong);
+next_btn.addEventListener('click', ()=> ChangeSong());
+prev_btn.addEventListener('click',() => ChangeSong(false));
 
 InitPlayer();
 
@@ -76,7 +79,36 @@ function TogglePlaySong () {
     play_btn_icon.classList.add('fa-pause');
   } else {
       audio_player.pause();
-      play_btn_icon.classList.add
+      play_btn_icon.classList.add('fa-play');
+      play_btn_icon.classList.remove('fa-pause');
   }
 }
 
+
+function ChangeSong (next = true) {
+  if (next) {
+      current_song_index++;
+      next_song_index = current_song_index + 1;
+
+    if (current_song_index > songs.length -1) {
+        current_song_index = 0;
+        next_song_index = current_song_index + 1;
+    }
+
+    if (next_song_index > songs.length - 1) {
+        next_song_index = 0
+    }
+  } else {
+      current_song_index--;
+      next_song_index = current_song_index + 1;
+
+    if (current_song_index < 0) {
+        current_song_index = songs.length - 1;
+        next_song_index = 0;
+    }
+  }
+
+  UpdatePlayer();
+  TogglePlaySong();
+}
+}

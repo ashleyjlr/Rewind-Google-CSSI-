@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Rewind</title>
   <link href="music.css" rel="stylesheet" type="text/css" />
-  
+  <link rel= "stylesheet" href="./icons/css/all.min.css" />
 </head>
 
 <body>
@@ -36,20 +36,22 @@
     </ul>
   </section>
 
+  
  <div class="app-wrapper">
         <div class="player">
           <audio id="music-player"></audio>
-            <div id="song-image" class="song-img" style="background-image: url('https://cdns-images.dzcdn.net/images/cover/1d66fd441a3388a440763ae3b645c4d2/350x350.jpg');"></div>
+            <div id="song-image" class="song-img" style="background-image: url('./images/song-1.jpg');"></div>
             <div class="song-details">
-                <h2>Forget me too ft. Halsey</h2>
-                <h3>Machine Gun Kelly</h3>
+                <h2 id="song-title"> Miss Jagger (feat. Kamille)</h2>
+                <h3 id="song-artist">Lotto Boyzz</h3>
             </div>
             <div class="player-controls">
                 <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
-                <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
-                <button id ="next-btn" class="skip-btn><i class="fas fa-forward fa-lg"></i></button>
+                <button id="play-btn" class="play"><i id="play-icon" class="fa-solid fa-play fa-2x"></i></button>
+                <button id ="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
             </div>
-          
+              <div class = "next-up">
+                <p>Next up:<span id="song-next-up"> Consideration (feat. SZA)</span></p>
             </div>
  
    </div>

@@ -85,7 +85,7 @@ function saveList() {
   // Convert list to JSON string.
   let value = JSON.stringify(user);
   // save to localStorage.
-  window.localStorage.setItem("currentuser", value);
+  window.localStorage.setItem("user", value);
 }
 
 
