@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
+/*   background-image: url('https://images.squarespace-cdn.com/content/v1/5c08843312b13fc3b2dd2040/1631038527054-VYIPT4ZAVSX95XRV4QQ8/website_background.001.jpg?format=2500w'); */
 }
 #navbar_section{
   position: sticky;
@@ -138,6 +139,7 @@ html, body {
   display: none;
 /*   align-items: center; */
   padding-top: 5%;
+  z-index: 90;
   border-radius: 20px;
 }
 #menu{
@@ -170,6 +172,16 @@ html, body {
   transition-duration: 0.3s;
 }
 
+#title{
+  font-size: 45px;
+  font-family: 'Concert One', cursive;
+}
+#subtitle{
+  font-size: 25px;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+  color: #335145;
+}
 
 .gameButton{
   font-family: 'Roboto', sans-serif;
@@ -233,11 +245,15 @@ html, body {
   padding: 50px;
  }
 
+
+
 h1{
-  font-size: 30px;
+  font-size: 20px;
   color: #335145;
   text-align: center;
    font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
  }
 p{
   text-align: center;
@@ -246,39 +262,6 @@ p{
 
 $blue: #1686d9;
 
-/* h1, h3 {
-	color: white;
-	font-weight: 400;
-}
-
-header {
-	display: flex;
-	padding: 0 15px;
-	max-width: 800px;
-	margin: 0 auto;
-	justify-content: space-between;
-	align-items: center;
-	img {
-		width: 30px;
-	}
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	display: inline;
-	padding: 6px;
-	a {
-		text-decoration: none;
-		color: black;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
- */
 .hero {
 	background-image: url("http://richardmiddleton.me/modal-hero.jpg");
 	background-size: cover;
@@ -324,21 +307,6 @@ li {
 	}
 
 
-.card-container {
-	max-width: 800px;
-	margin: 50px auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.card {
-	height: 300px;
-	width: 230px;
-	border: 1px solid darkgray;
-	border-radius: 3px;
-	margin: 10px;
-}
 
 /*  */
 
@@ -399,11 +367,12 @@ li {
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
+  z-index: 100;
 }
 
 
 
-.close {
+#close1 {
 	position: absolute;
 	top: 0;
 	right: 10px;
@@ -438,7 +407,7 @@ li {
 }
 
 
-.close2 {
+#close2 {
 	position: absolute;
 	top: 0;
 	right: 10px;
@@ -450,6 +419,7 @@ li {
 		color: #666;
 	}
 }
+
 .hero3 {
 	background-image: url("http://richardmiddleton.me/modal-hero.jpg");
 	background-size: cover;
@@ -472,9 +442,7 @@ li {
 	border-radius: 4px;
 }
 
-
-
-.close3 {
+#close3 {
 	position: absolute;
 	top: 0;
 	right: 10px;
@@ -507,11 +475,12 @@ li {
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
+  
 }
 
 
 
-.close4 {
+#close4 {
 	position: absolute;
 	top: 0;
 	right: 10px;
@@ -523,3 +492,38 @@ li {
 		color: #666;
 	}
 }
+
+#game1{
+  box-shadow: 10px 10px 10px 0px #666;
+  border-radius: 10px;
+  background-color: #dce4d8;
+}
+
+#game2{
+  box-shadow: 10px 10px 10px 0px #666;
+  border-radius: 10px;
+  background-color: #dce4d8;
+}
+
+#game3{
+  box-shadow: 10px 10px 10px 0px #666;
+  border-radius: 10px;
+  background-color: #dce4d8;
+}
+
+#game4{
+  box-shadow: 10px 10px 10px 0px #666;
+  border-radius: 10px;
+  background-color: #dce4d8;
+}
+
+
+.gameButton{
+  margin-left: 180px;
+  margin-right: 50%;
+  text-align: center;
+}
+
+/* .button{
+ z-index: auto;
+} */

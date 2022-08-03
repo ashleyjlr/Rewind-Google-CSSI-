@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <div id="navbar_section">
     <div id="left">
       <div class="menu-btn">
@@ -20,6 +21,7 @@
         <h5 id="logo_words">Rewind</h5>
       </a>
     </div>
+    <div id="clock">00:00:00</div>
     <div id="sign">
       <a href="#" id="login">Login</a>
       <a href="#"><button id="signin">Sign Up</button></a>
@@ -36,11 +38,22 @@
     </ul>
   </section>
   <section id="home_page">
+    
+ <section id="title">
+    <h1 id="title">Welcome home!</h1>
+    <h2 id="subtitle">Learn all about our purpose, the Pomodoro Method, and even try the method out for yourself.</h2>
+  </section>
+
+    
     <div id="timer"> <!--embed pomodoro timer api-->
 <!--       <h2>Begin your timer!</h2> -->
 <!--       <a><button>Start!</button></a> -->
 <!--       <h2>Start Your Rewind Timer!</h2> -->
 <!--       <a href=""><button id="start">Start Timer</button></a> -->
+
+
+
+
       
       <div id="startButtons">
         <button id="work" class="button is-rounded theButtons"><img id="icon" src="https://www.yoyoon.com/public/img/play_icon.png">Start Working</button>
@@ -50,8 +63,9 @@
       <div id="countdown_timer">00:00:00</div>
     
       <div id="editButtons">
-        <button id="pause" class="button is-rounded theButtons"><img id="icon" src="http://cdn.onlinewebfonts.com/svg/img_269321.png"> Pause</button>
-      <button id="resume" class="button is-rounded theButtons"><img id="icon" src="https://cdn0.iconfinder.com/data/icons/bold-multimedia-player-button/512/media_player_button_8-512.png"> Resume</button>
+<!--         <button id="pause" class="button is-rounded theButtons"><img id="icon" src="http://cdn.onlinewebfonts.com/svg/img_269321.png"> Pause</button>
+      <button id="resume" class="button is-rounded theButtons"><img id="icon" src="https://cdn0.iconfinder.com/data/icons/bold-multimedia-player-button/512/media_player_button_8-512.png"> Resume</button> -->
+        <button id="replayButton"><img id="replayImg" src="https://cdn.iconscout.com/icon/free/png-256/replay-20-470364.png"></button>
       </div>
     
       <p id="firstTime">First time here? Customize your <a href="settings.html">Settings</a> to personalize your Rewind experience! You can also <a href="">sign up</a> to save your preferences.</p> 
@@ -165,16 +179,21 @@
   		<p>Thank you for taking a rewind of time!</p>
       <h3>If you made it this far, go ahead, take a break.</h3>
       <h3>Remember the importance of taking breaks and we'll see you soon! :)</h3>
+      <a href="#"><button>Go back to the top!</button></a>
   	</div>
+      
   </section>
 
-  
+
 
 
 
   
   <script src="home.js"></script>
   <script src="timer.js"></script>
+<!--   <script src="navTimer.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
 

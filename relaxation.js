@@ -16,3 +16,14 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+// This will be a json
+const resDiv = document.querySelector('#results');
+const resBtn = document.querySelector('#getData');
+const response = fetch("https://api.adviceslip.com/advice").then(response => {
+  return response.json();
+})
+// const data = await response.json();
+//    console.log(data);
+// Go within the response to get the advice variable
+console.log(response)

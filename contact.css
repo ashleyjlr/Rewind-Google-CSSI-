@@ -10,6 +10,18 @@ html, body {
   width: 100%;
   font-family: 'Amatic SC', cursive;
 }
+#title{
+  font-size: 45px;
+  font-family: 'Concert One', cursive;
+}
+#subtitle{
+  font-size: 25px;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+  color: #335145;
+}
+
+
 #navbar_section{
   position: sticky;
   z-index: 100;
@@ -146,7 +158,7 @@ html, body {
 }
 #menu{
   list-style-type: none;
-  width: 100%;
+  width: 100vh;
   margin-left: 10%;
   padding: 0;
 }

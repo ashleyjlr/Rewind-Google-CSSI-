@@ -20,6 +20,11 @@
         <h5 id="logo_words">Rewind</h5>
       </a>
     </div>
+    <div id="clock">
+<!--       <button id="work">V</button>
+      <button id="relax">V</button> -->
+      <p>00:00:00</p>
+    </div>
     <div id="sign">
       <a href="#" id="login">Login</a>
       <a href="#"><button id="signin">Sign Up</button></a>
@@ -38,17 +43,18 @@
 
 
   <section id="title">
-    <h1>hi</h1>
+    <h1 id="title">Games and Fun</h1>
+    <h2 id="subtitle"> Want to take a break? Learn more about our game selection and choose one to play!  </h2>
   </section>
   
   <section id="row1">  
     <section id="game1">
-      <h1>Dreams and Reality</h1>
+      <h1 class="h1">Dreams and Reality</h1>
       <img id="game1img" src="https://construct-static.com/uploads/2293/41087fd7-a325-4e21-890f-1101235f0797/c/-895885962/mainimage.png"></img>
       <div id="game1game" style="display:none"></div>
             <section class="hero">
             	<div class="hero-content">
-            		<a href="#" id="button1" class="button">More info</a>
+            		<a href="#bg-modal1" id="button1" class="button">More info</a>
             	</div>
             </section>
             
@@ -56,7 +62,7 @@
             
             <div class="bg-modal" id="bg-modal1">
             	<div class="modal-contents">
-            		<div class="close">+</div>
+            		<div id="close1">+</div>
             		<img src="https://richardmiddleton.me/comic-100.png" alt="">
                   <h2>Description:</h2>
                       <p>Dreams and Reality is a personal hand drawn platformer about climbing your dreams.</p>
@@ -71,10 +77,11 @@
             </div>
       <hr>
       <button class="gameButton" id="game1btn">Play now!</button>
+      <hr>
     </section>
        
     <section id="game2">
-     <h1>Frappy Bird</h1>
+     <h1 class="h1">Frappy Bird</h1>
      <img class="gameImg" id="game2img" src="https://construct-static.com/uploads/557/8d9bb552-71ee-4861-84e6-d8ab274e182b/c/-895885962/mainimage.png"></img> 
     <div id="game2game" style="display:none"></div> 
 
@@ -88,7 +95,7 @@
             
             <div class="bg-modal" id="bg-modal2">
             	<div class="modal-contents">
-            		<div class="close2">+</div>
+            		<div id="close2">+</div>
             		<img src="https://richardmiddleton.me/comic-100.png" alt="">
                 <h2>Description:</h2>
                       <p>Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right</p>
@@ -102,6 +109,7 @@
 
       <hr>
      <button class="gameButton" id="game2btn">Play now!</button>
+      <hr>
     </section>
   </section>
 
@@ -112,7 +120,7 @@
   
  <section id="row2"> 
   <section id="game3">
-    <h1>Kiwi Story</h1>    
+    <h1 class="h1">Kiwi Story</h1>    
     <img id="game3img" src="https://construct-static.com/uploads/5/e56db25e-1654-43ea-940b-44624dcbbbc1/c/683465025/kiwi.png"></img> 
     <div id="game3game" style="display:none"></div> 
 
@@ -126,7 +134,7 @@
             
               <div class="bg-modal" id="bg-modal3">
             	<div class="modal-contents3">
-            		<div class="close">+</div>
+            		<div id="close3">+</div>
             		<img src="https://richardmiddleton.me/comic-100.png" alt="">
                   <h2>Description:</h2>
                       <p>The Kiwi clan are looking to save the world by collecting gummi beetles! Help them succeed and save the world!
@@ -141,6 +149,7 @@
             </div>
     <hr>
     <button class="gameButton" id="game3btn">Play now!</button>
+    <hr>
   </section>
 
 
@@ -153,7 +162,7 @@
 
    
   <section id="game4">
-     <h1>Alien Disaster</h1>
+     <h1 class="h1">Alien Disaster</h1>
      <img id="game4img" src="https://construct-static.com/uploads/63/6802a607-8485-4e46-8751-2523a08db9dc/c/-895885962/mainimage.png"></img>
      <div id="game4game" style="display:none"></div>
     <section class="hero">
@@ -166,7 +175,7 @@
             
               <div class="bg-modal" id="bg-modal4">
             	<div class="modal-contents4">
-            		<div class="close">+</div>
+            		<div id="close4">+</div>
             		<img src="https://richardmiddleton.me/comic-100.png" alt="">
                   <h2>Description:</h2>
                       <p>Buy some time for the human forces by killing as many aliens as you can.</p>
@@ -181,12 +190,15 @@
             
             	<hr>
      <button class="gameButton" id="game4btn">Play now!</button>
+    <hr>
+    
   </section>
 </section>
 
   
   
   <script src="games.js"></script>
+  <script src="navTimer.js"></script>
 
 <!--   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
 </body>

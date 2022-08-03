@@ -38,7 +38,7 @@ offButtons.forEach((offtimeButtons) => {
   offtimeButtons.addEventListener("click", (e) => {
     offButtons.forEach((offtimeButtons) => {
       offtimeButtons.classList.remove("selectedOff");
-    })
+    });
     offtimeButtons.classList.add("selectedOff");
     offTimeMinutes = offtimeButtons.value;
     user.offTime = Number(offTimeMinutes);
