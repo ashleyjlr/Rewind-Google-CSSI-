@@ -33,6 +33,9 @@ let user = {
 let custom_button = document.querySelector("#customButton");
 const offButtons = document.querySelectorAll(".offtimeButtons");
 
+// let offSelect = document.querySelector("#offSelectionBox");
+// let onSelect = document.querySelector("#onSelectionBox");
+
 
 offButtons.forEach((offtimeButtons) => {
   offtimeButtons.addEventListener("click", (e) => {
@@ -42,6 +45,7 @@ offButtons.forEach((offtimeButtons) => {
     offtimeButtons.classList.add("selectedOff");
     offTimeMinutes = offtimeButtons.value;
     user.offTime = Number(offTimeMinutes);
+    // offSelect.innerHTML = "<h4>Selected: " + user.offTime + " Minutes Off</h4";
     console.log(user);
     saveList();
     console.log(user);
@@ -58,6 +62,7 @@ onButtons.forEach((ontimeButtons) => {
     ontimeButtons.classList.add("selectedOn");
     onTimeMinutes = ontimeButtons.value;
     user.onTime = Number(onTimeMinutes);
+    // onSelect.innerHTML = "<h4>Selected: " + user.onTime + " Minutes On</h4";
     console.log(user);
     saveList();
     console.log(user);
