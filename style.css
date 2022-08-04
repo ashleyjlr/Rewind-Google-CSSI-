@@ -84,17 +84,30 @@ html, body {
   transition-duration: 0.3s;
 }
 #welcome_section{
-  height: 100vh;
+  height: 100%;
   width: 100%;
 /*   background-color: #92B4A7; */
 /*   background-image: url('https://cdnb.artstation.com/p/assets/images/images/036/271/507/original/bizarre-beasties-snow.gif?1617197303'); */
 /*   background-image: url('https://thumbs.gfycat.com/CanineIdleFirecrest-max-1mb.gif'); */
-  background-image: url('https://media0.giphy.com/media/pI43YlhMoPqsE/giphy.gif?cid=ecf05e47x409y56vj68hhg7aya961ie80pstxm1g4tvyt7rz&rid=giphy.gif&ct=g');
+  background-image: url('https://wallpaperaccess.com/full/2825711.gif');
   background-repeat: no-repeat;
   color: white;
+/*   text-shadow: 0 0 3px pink, 0 0 5px #0000FF; */
   z-index: 1;
 /*   top: 0;
   left: 0; */
+}
+#welcome_section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2A3132;
+/*     background-color: rgb(41, 64, 48); */
+    opacity: .5;
+    z-index: 2;
 }
 #welcome_name{
   top: 0;
@@ -108,6 +121,7 @@ html, body {
   justify-content: center;
   font-family: 'Concert One', cursive;
   line-height: 0.05px;
+  z-index: 3;
 }
 #rewind_title{
   font-size: 90px;
@@ -129,6 +143,7 @@ html, body {
   left: 0;
   font-size: 40px;
   font-family: 'Archivo', sans-serif;
+  z-index: 3;
   
 
 /*   -webkit-animation: bounce 1.2s ease-out;
@@ -195,7 +210,9 @@ html, body {
 .link_wrapper{
   position: relative;
 }
-
+#click{
+  z-index: 3;
+}
 #hov_buttton{
   font-family: 'Roboto', sans-serif;
   display: block;
@@ -231,18 +248,20 @@ html, body {
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
-  fill: #335145;
+/*   fill: #335145; */
+  fill: white;
   transition: all .35s;
 }
 
 #hov_buttton:hover{
   width: 200px;
-  border: 3px solid #335145;
+  border: 3px solid white;
   background: transparent;
-  color: #335145;
+  color: white;
 }
 
 #hov_buttton:hover + .icon{
-  border: 3px solid #335145;
+/*   border: 3px solid #335145; */
+  border: 3px solid white;
   right: -25%;
 }

@@ -8,6 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-image: url('https://i.pinimg.com/originals/63/7b/37/637b37c7741cdacccd4f6446e4e7f2df.gif');
 }
 #title{
   font-size: 45px;
@@ -208,7 +209,7 @@ body {
     width: 414px;
     max-width: 100%;
     border-radius: 16px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .song-img {
@@ -278,7 +279,7 @@ body {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: #FE4880;
+    background-color: #876ab9;
     color: #FFF;
     margin: 0 30px;
 
@@ -287,7 +288,7 @@ body {
     outline: none;
     cursor: pointer;
 
-    box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+    box-shadow: 0px 6px 12px #c6acd2;
     transition: 0.4s;
 }
 
@@ -302,7 +303,7 @@ body {
 }
 
 .player-controls .play:hover {
-    box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+    box-shadow: 0px 8px 16px #460566;
 }
 
 .next-up p {

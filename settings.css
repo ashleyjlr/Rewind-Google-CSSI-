@@ -233,3 +233,7 @@ html, body {
   background-image: url("https://img.freepik.com/premium-vector/landscape-cartoon-scene-with-trees-green-grass-hill-white-cloud-summer-blue-sky-background_120819-284.jpg");
   border-radius: 20px;
 }
+#sun{
+  height: 100px;
+  width: auto;
+}

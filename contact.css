@@ -190,7 +190,7 @@ html, body {
   text-align: center;
   padding-top: 5%;
   color: #335145;
-  font-size: 40px;
+  font-size: 45px;
 }
 #note{
   text-align: center;
@@ -235,4 +235,14 @@ html, body {
   background-color: #335145;
   color: white;
   width: 100%;
+}
+#title{
+  font-size: 45px;
+  font-family: 'Concert One', cursive;
+}
+#subtitle{
+  font-size: 25px;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+  color: #335145;
 }

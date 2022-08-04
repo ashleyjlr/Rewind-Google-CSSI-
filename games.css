@@ -273,12 +273,12 @@ $blue: #1686d9;
 	align-items: center;
 }
 
-#button1, #button2, #button3, #button4 {
-  color: #B6CB9E;
+#button2, #button3 {
+  color: #3d3253;
   align-items: center;
-   background-color: #335145;
+   background-color: #beb6ce;
    background-position: 0 0;
-   border: 0px solid #335145;
+   border: 0px solid #beb6ce;
    border-radius: 0px;
    box-sizing: border-box;
    cursor: pointer;
@@ -300,6 +300,36 @@ $blue: #1686d9;
    word-break: break-word;
   font-family: 'Roboto', sans-serif;
 }
+
+#button1,#button4{
+  color: #335145;
+  align-items: center;
+   background-color: #b1cdcd;
+   background-position: 0 0;
+   border: 0px solid #b1cdcd;
+   border-radius: 0px;
+   box-sizing: border-box;
+   cursor: pointer;
+   display: flex;
+   font-size: 1rem;
+   font-weight: 700;
+   line-height: 33.4929px;
+   list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+   text-align: left;
+   text-decoration: none;
+   text-shadow: none;
+   text-underline-offset: 1px;
+   transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+   user-select: none;
+   -webkit-user-select: none;
+  touch-action: manipulation;
+   white-space: nowrap;
+   word-break: break-word;
+  font-family: 'Roboto', sans-serif;
+}
+
+
 
 	#button1:hover, #button2:hover, #button3:hover, #button4:hover {
 	background-color: #B6CB9E;
@@ -365,7 +395,7 @@ transition: all .2s ease-in;
 .modal-contents {
 	height: 300px;
 	width: 500px;
-	background-image: url('https://cdnb.artstation.com/p/assets/images/images/047/080/829/original/hayder-baker-pixel-study.gif?1646716831');
+	background-image: url('https://i.gifer.com/WMV.gif');
 	text-align: center;
 	padding: 20px;
 	position: relative;
@@ -499,25 +529,25 @@ transition: all .2s ease-in;
 }
 
 #game1{
-  box-shadow: 10px 10px 10px 0px #052424,  60px -16px teal;
+  box-shadow: 10px 10px 10px 0px #052424,  60px -16px #b1cdcd;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game2{
-  box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #8471a8;
+  box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #beb6ce;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game3{
- box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #8471a8;
+ box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #beb6ce;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game4{
-    box-shadow: 10px 10px 10px 0px #052424,  60px -16px teal;
+    box-shadow: 10px 10px 10px 0px #052424,  60px -16px #b1cdcd;
   border-radius: 10px;
   background-color: #dce4d8;
 }
