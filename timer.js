@@ -61,6 +61,7 @@ const countdown = () =>{
   gap = clickTime - now;
   if(gap < 0){
     gap = 0;
+    document.querySelector('#timesUpModal').style.display = "flex";
   }
   // console.log(gap);
 
@@ -125,7 +126,9 @@ function updateUserTime(){
   clockBox.innerHTML = `${clockTime}`;
 }
 
-
+// document.querySelector('#closeButton').addEventListener("click", function() {
+// 	document.querySelector('#timesUpModal').style.display = "none";
+// });
 
 // window.onload = function() {
 //   yourFunction(param1, param2);

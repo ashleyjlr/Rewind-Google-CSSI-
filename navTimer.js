@@ -56,6 +56,7 @@ const countdown = () =>{
   // console.log(now);
   if(gap < 0){
     gap = 0;
+    document.querySelector('#timesUpModal').style.display = "flex";
   }
   // console.log(gap);
 
@@ -87,3 +88,28 @@ function updateUserTime(){
 window.onload = function() {
   updateUserTime();
 };
+
+
+// let session = document.querySelector("#nextSes");
+// session.addEventListener("click", () =>{
+//   if (time === )
+// })
+
+
+
+
+// document.querySelector('#closeButton').addEventListener("click", function() {
+// 	document.querySelector('#timesUpModal').style.display = "none";
+// });
+
+
+
+
+// function popUp(){
+//   document.getElementById('button2').addEventListener("click", function() {
+// 	  document.querySelector('#timesUpModal').style.display = "flex";
+//   });
+//   document.querySelector('#closeButton').addEventListener("click", function() {
+// 	  document.querySelector('#timesUpModal').style.display = "none";
+//   });
+// }

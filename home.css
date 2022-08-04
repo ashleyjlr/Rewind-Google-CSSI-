@@ -276,6 +276,19 @@ html, body {
   padding-left: 8%;
 }
 
+#closeButton{
+  position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+}
+
 
 /* .text-section{
   background-image: url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/wind/wind-blowing-through-a-field.jpg');
