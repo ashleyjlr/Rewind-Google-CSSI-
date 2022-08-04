@@ -278,8 +278,8 @@ $blue: #1686d9;
   align-items: center;
    background-color: #335145;
    background-position: 0 0;
-   border: 1px solid #335145;
-   border-radius: 11px;
+   border: 0px solid #335145;
+   border-radius: 0px;
    box-sizing: border-box;
    cursor: pointer;
    display: flex;
@@ -298,12 +298,15 @@ $blue: #1686d9;
   touch-action: manipulation;
    white-space: nowrap;
    word-break: break-word;
-  font-family: 'Roboto', sans-serif;}
+  font-family: 'Roboto', sans-serif;
+}
 
 	#button1:hover, #button2:hover, #button3:hover, #button4:hover {
 	background-color: #B6CB9E;
    border-color: #B6CB9E;
    color: #335145;
+transition: all .2s ease-in;
+    
 	}
 
 
@@ -506,13 +509,13 @@ $blue: #1686d9;
 }
 
 #game3{
-  box-shadow: 10px 10px 10px 0px #666;
+ box-shadow: 60px -16px teal;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game4{
-  box-shadow: 10px 10px 10px 0px #666;
+  box-shadow: 60px -16px teal;
   border-radius: 10px;
   background-color: #dce4d8;
 }
@@ -522,6 +525,7 @@ $blue: #1686d9;
   margin-left: 180px;
   margin-right: 50%;
   text-align: center;
+  transition: all .2s ease-in;
 }
 
 /* .button{

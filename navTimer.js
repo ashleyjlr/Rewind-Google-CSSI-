@@ -7,7 +7,7 @@ function loadTime() {
   }
 }
 loadTime();
-console.log("clocktime: " + clockTime);
+// console.log("clocktime: " + clockTime);
 
 
 let userTime;
@@ -32,8 +32,8 @@ function loadCount() {
   }
 }
 loadCount();
-console.log(openTime.startTime);
-console.log(openTime.endTime);
+// console.log(openTime.startTime);
+// console.log(openTime.endTime);
 
 // let clickTime = openTime.startTime;
 // let now = openTime.endTime;
@@ -52,12 +52,12 @@ const countdown = () =>{
   let now = Date.now();
   gap = clickTime - now;
   // gap = now - clickTime;
-  console.log(clickTime);
-  console.log(now);
+  // console.log(clickTime);
+  // console.log(now);
   if(gap < 0){
     gap = 0;
   }
-  console.log(gap);
+  // console.log(gap);
 
   const second = 1000;
   const minute = second * 60;
@@ -78,7 +78,7 @@ function updateUserTime(){
   setInterval(countdown, 1000);
   saveTime();
   loadTime();
-  console.log(clockTime);
+  // console.log(clockTime);
   clockBox.innerHTML = `${clockTime}`;
 }
 // updateUserTime();

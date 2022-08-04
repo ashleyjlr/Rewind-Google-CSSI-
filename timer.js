@@ -24,7 +24,7 @@ function loadTime() {
   }
 }
 loadTime();
-console.log("clocktime: " + clockTime);
+// console.log("clocktime: " + clockTime);
 
 let timerBox = document.querySelector("#countdown_timer");
 let gap = 0;
@@ -106,7 +106,7 @@ relaxButton.addEventListener("click", () => {
   clickTime = Date.now() + Number(convert());
   countTime.endTime = clickTime;
   saveCount();
-  console.log(countTime);
+  // console.log(countTime);
 
   setInterval(updateUserTime, 1000);
   // setInterval(countdown, 1000);
@@ -121,7 +121,7 @@ function updateUserTime(){
   setInterval(countdown, 1000);
   saveTime();
   loadTime();
-  console.log(clockTime)
+  // console.log(clockTime)
   clockBox.innerHTML = `${clockTime}`;
 }
 

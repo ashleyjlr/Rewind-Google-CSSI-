@@ -208,12 +208,12 @@ html, body {
 .contentCluster{
   font-size: 15px;
 }
-/* .selectedOff{
+.selectedOff{
   box-shadow: 0 0 10px 3px #A6C36F;
 }
 .selectedOn{
   box-shadow: 0 0 10px 3px #A6C36F;
-} */
+}
 .offtimeButtons{
   outline: none;
   border-color: #A6C36F;

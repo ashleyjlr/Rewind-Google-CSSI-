@@ -182,3 +182,88 @@ html, body {
   color: white !important;
   transition-duration: 0.3s;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  height: 50vh;
+  width: 700px;
+  max-width: 80%;
+  margin: 0 auto;
+  
+}
+#results p{
+  font-size:40px;
+/*   font-family: 'Poppins', sans-serif; */
+}
+.btn{
+ background-color: teal;
+  padding: 10px;
+  display: block;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  outline: 0;
+  box-shadow: var(--main-shadow);
+  cursor: pointer;
+  transition: all .2s ease-in;
+  width: 200px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.btn:hover {
+  background-color:  #B6CB9E;
+  color: teal;
+}
+
+#results {
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 20px;
+  box-shadow: 60px -16px teal;
+  margin-bottom: 30px;
+  background-image: url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/wind/wind-blowing-through-a-field.jpg');
+  font-family: 'Roboto', sans-serif;
+  color: teal;
+}
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

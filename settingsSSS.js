@@ -19,62 +19,25 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-function saveList() {
-  let value = JSON.stringify(user);
-  window.localStorage.setItem("user", value);
-}
-
-let userInfo = [];
-function loadList() {  
-  const userJson = window.localStorage.getItem('user');
-  userInfo = JSON.parse(userJson);
-  if (userInfo == null) {
-    userInfo = [];
-  }
+// create user ID
+function getRandomId() {
+  return Math.floor(Math.random() * 1e6).toString();
 }
 
 let user = {
+  id: getRandomId(),
   onTime: 25,
   offTime: 5,
 };
 
 let custom_button = document.querySelector("#customButton");
-let offButtons = document.querySelectorAll(".offtimeButtons");
-let onButtons = document.querySelectorAll(".ontimeButtons");
+const offButtons = document.querySelectorAll(".offtimeButtons");
 
-function offAddColor(){
-  offButtons.forEach((offtimeButtons) => {
-    if (offtimeButtons.value == userInfo.offTime){
-      // console.log("equal");
-      offButtons.forEach((offtimeButtons) => {
-        offtimeButtons.classList.remove("selectedOff");
-      });
-      offtimeButtons.classList.add("selectedOff");
-    }
-  });
-}
-function onAddColor(){
-  onButtons.forEach((ontimeButtons) => {
-    if (ontimeButtons.value == userInfo.onTime){
-      // console.log("equal");
-      onButtons.forEach((ontimeButtons) => {
-        ontimeButtons.classList.remove("selectedOn");
-      });
-      ontimeButtons.classList.add("selectedOn");
-    }
-  });
-}
+// let offSelect = document.querySelector("#offSelectionBox");
+// let onSelect = document.querySelector("#onSelectionBox");
 
-loadList();
-console.log("hello");
-console.log(userInfo);
-offAddColor();
-onAddColor();
 
-offButtons.forEach((offtimeButtons) =>{
-  console.log("hey")
-  console.log(user);
-  console.log(userInfo);
+offButtons.forEach((offtimeButtons) => {
   offtimeButtons.addEventListener("click", (e) => {
     offButtons.forEach((offtimeButtons) => {
       offtimeButtons.classList.remove("selectedOff");
@@ -82,37 +45,27 @@ offButtons.forEach((offtimeButtons) =>{
     offtimeButtons.classList.add("selectedOff");
     offTimeMinutes = offtimeButtons.value;
     user.offTime = Number(offTimeMinutes);
-    userInfo.offTime = Number(offTimeMinutes);
-    // console.log(user.offTime)
-    // console.log(userInfo.offTime)
-    saveList();
-    loadList();
-    console.log("click")
+    // offSelect.innerHTML = "<h4>Selected: " + user.offTime + " Minutes Off</h4";
     console.log(user);
-    console.log(userInfo);
+    saveList();
+    console.log(user);
   });
 });
 
+const onButtons = document.querySelectorAll(".ontimeButtons");
 
-onButtons.forEach((ontimeButtons) =>{
-  console.log("heyy")
-  console.log(user);
-  console.log(userInfo);
+onButtons.forEach((ontimeButtons) => {
   ontimeButtons.addEventListener("click", (e) => {
     onButtons.forEach((ontimeButtons) => {
       ontimeButtons.classList.remove("selectedOn");
-    });
+    })
     ontimeButtons.classList.add("selectedOn");
     onTimeMinutes = ontimeButtons.value;
     user.onTime = Number(onTimeMinutes);
-    userInfo.offTime = Number(offTimeMinutes);
-    // console.log(user.offTime)
-    // console.log(userInfo.offTime)
-    saveList();
-    loadList();
-    console.log("click")
+    // onSelect.innerHTML = "<h4>Selected: " + user.onTime + " Minutes On</h4";
     console.log(user);
-    console.log(userInfo);
+    saveList();
+    console.log(user);
   });
 });
 
@@ -120,14 +73,25 @@ let on_input = document.querySelector("#onInput");
 let off_input = document.querySelector("#offInput");
 
 on_input.addEventListener("change", () =>{
-  onTimeMinutes = on_input.value;
+  onTimeMinutes = onInput.value;
   user.onTime = Number(onTimeMinutes);
   console.log(user);
   saveList();
 });
 off_input.addEventListener("change", () =>{
-  offTimeMinutes = off_input.value;
+  offTimeMinutes = offInput.value;
   user.offTime = Number(offTimeMinutes);
   console.log(user);
   saveList();
 });
+
+// Save list to persistent (browser/local) storage.
+function saveList() {
+  // Convert list to JSON string.
+  let value = JSON.stringify(user);
+  // save to localStorage.
+  window.localStorage.setItem("user", value);
+}
+
+
+
