@@ -1,3 +1,4 @@
+console.log("music.js")
 const menuBtn = document.querySelector('.menu-btn');
 let menuLine = document.querySelectorAll(".menu-btn_find");
 let logoWord = document.querySelector("#logo_words");
@@ -18,6 +19,9 @@ menuBtn.addEventListener('click', () => {
 });
 
 window.onload = () => {
+  // Call navTimer initialization.
+  updateUserTime();
+  console.log("window.onload")
   const song_img_el = document.querySelector('#song-image');
   const song_title_el = document.querySelector('#song-title');
   const song_artist_el = document.querySelector('#song-artist');
@@ -65,6 +69,8 @@ window.onload = () => {
     }
   ]
 
+  console.log('play_btn')
+  console.log(play_btn)
   play_btn.addEventListener('click', TogglePlaySong);
   next_btn.addEventListener('click', () => ChangeSong());
   prev_btn.addEventListener('click', () => ChangeSong(false));
@@ -90,6 +96,7 @@ window.onload = () => {
   }
 
   function TogglePlaySong() {
+    console.log("TogglePlaySong")
     if (audio_player.paused) {
       audio_player.play();
       play_btn_icon.classList.remove('fa-play');

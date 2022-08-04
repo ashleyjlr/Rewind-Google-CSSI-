@@ -209,20 +209,27 @@ html, body {
   font-size: 15px;
 }
 .selectedOff{
-  box-shadow: 0 0 10px 3px #A6C36F;
+/*   box-shadow: 0 0 10px 3px #A6C36F; */
+  box-shadow: 0 0 10px 3px rgb(116, 201, 237);
 }
 .selectedOn{
-  box-shadow: 0 0 10px 3px #A6C36F;
+/*   box-shadow: 0 0 10px 3px #A6C36F; */
+  box-shadow: 0 0 10px 3px rgb(116, 201, 237);
 }
 .offtimeButtons{
   outline: none;
-  border-color: #A6C36F;
-  background-color: #DFEBC9;
+/*   border-color: #A6C36F; */
+  border-color: rgb(107, 155, 207);
+/*   background-color: #DFEBC9; */
+/*   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLJ0AYxjNEJXjf_XkE3H9vnwxembMGOKpoNQXftD-59Xdclv-42AjuZSESTfga48tCH0&usqp=CAU"); */
+  background-image: url("https://img.freepik.com/premium-vector/landscape-cartoon-scene-with-trees-green-grass-hill-white-cloud-summer-blue-sky-background_120819-284.jpg");
   border-radius: 20px;
 }
 .ontimeButtons{
   outline: none;
-  border-color: #A6C36F;
-  background-color: #DFEBC9;
+/*   border-color: #A6C36F; */
+  border-color: rgb(107, 155, 207);
+/*   background-color: #DFEBC9; */
+  background-image: url("https://img.freepik.com/premium-vector/landscape-cartoon-scene-with-trees-green-grass-hill-white-cloud-summer-blue-sky-background_120819-284.jpg");
   border-radius: 20px;
 }

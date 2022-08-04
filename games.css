@@ -365,12 +365,13 @@ transition: all .2s ease-in;
 .modal-contents {
 	height: 300px;
 	width: 500px;
-	background-color: white;
+	background-image: url('https://cdnb.artstation.com/p/assets/images/images/047/080/829/original/hayder-baker-pixel-study.gif?1646716831');
 	text-align: center;
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
   z-index: 100;
+  color: #412c68;
 }
 
 
@@ -478,6 +479,7 @@ transition: all .2s ease-in;
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
+  color: white;
   
 }
 
@@ -497,25 +499,25 @@ transition: all .2s ease-in;
 }
 
 #game1{
-  box-shadow: 10px 10px 10px 0px #666;
+  box-shadow: 10px 10px 10px 0px #052424,  60px -16px teal;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game2{
-  box-shadow: 10px 10px 10px 0px #666;
+  box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #8471a8;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game3{
- box-shadow: 60px -16px teal;
+ box-shadow: 10px 10px 10px 0px #382c4e,  60px -16px #8471a8;
   border-radius: 10px;
   background-color: #dce4d8;
 }
 
 #game4{
-  box-shadow: 60px -16px teal;
+    box-shadow: 10px 10px 10px 0px #052424,  60px -16px teal;
   border-radius: 10px;
   background-color: #dce4d8;
 }
@@ -531,3 +533,8 @@ transition: all .2s ease-in;
 /* .button{
  z-index: auto;
 } */
+
+#gif1{
+  width: 100px;
+  height: auto;
+}

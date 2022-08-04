@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Rewind</title>
   <link href="music.css" rel="stylesheet" type="text/css" />
-  <link href= "./icons/css/all.min.css" rel="stylesheet" />
-  
+  <link href="./icons/css/all.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -17,12 +17,14 @@
         <div class="menu-btn_find"></div>
       </div>
       <a href="index.html" id="logo">
-        <img id="logo_pic" src="https://lh3.googleusercontent.com/CJGlx2sQIm7_RsFqMHugMgieWt357fe48y6sBMqJ2SidjnZO6j3lNCVeOFEhbpNj7z5M7M1NPtlimZKpOV5d7rntAbEwAKeG8s3EVugQh0FwCJUhHkbfxslyoZWo4DuBKP5JKW1nVA=w2400" alt="logo">
+        <img id="logo_pic"
+          src="https://lh3.googleusercontent.com/CJGlx2sQIm7_RsFqMHugMgieWt357fe48y6sBMqJ2SidjnZO6j3lNCVeOFEhbpNj7z5M7M1NPtlimZKpOV5d7rntAbEwAKeG8s3EVugQh0FwCJUhHkbfxslyoZWo4DuBKP5JKW1nVA=w2400"
+          alt="logo">
         <h5 id="logo_words">Rewind</h5>
       </a>
     </div>
     <div id="clock">
-<!--       <button id="work">V</button>
+      <!--       <button id="work">V</button>
       <button id="relax">V</button> -->
       <p>00:00:00</p>
     </div>
@@ -42,47 +44,50 @@
     </ul>
   </section>
 
-<!--    <section id="title"> -->
-<!--     <h1 id="title">Music</h1>
+  <!--    <section id="title"> -->
+  <!--     <h1 id="title">Music</h1>
     <h2 id="subtitle"> Hit that rewind! Listen to your favorite tunes as you work/relax.</h2> -->
- <div class="app-wrapper">
-        <div class="player">
-          <audio id="music-player"></audio>
-            <div id="song-image" class="song-img" style="background-image: url('./images/song-1.jpg');"></div>
-            <div class="song-details">
-                <h2 id="song-title"> Miss Jagger (feat. Kamille)</h2>
-                <h3 id="song-artist">Lotto Boyzz</h3>
-            </div>
-            <div class="player-controls">
-                <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
-                <button id="play-btn" class="play"><i id="play-icon" class="fa-solid fa-play fa-2x"></i></button>
-                <button id ="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
-            </div>
-              <div class = "next-up">
-                <p>Next up:<span id="song-next-up"> Consideration (feat. SZA)</span></p>
-            </div>
- 
-   </div>
-<!-- </body> -->
+  <div class="app-wrapper">
+    <div class="player">
+      <audio id="music-player"></audio>
+      <div id="song-image" class="song-img" style="background-image: url('./images/song-1.jpg');"></div>
+      <div class="song-details">
+        <h2 id="song-title"> Miss Jagger (feat. Kamille)</h2>
+        <h3 id="song-artist">Lotto Boyzz</h3>
+      </div>
+      <div class="player-controls">
+        <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
+        <button id="play-btn" class="play"><i id="play-icon" class="fa-solid fa-play fa-2x"></i></button>
+        <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
+      </div>
+      <div class="next-up">
+        <p>Next up:<span id="song-next-up"> Consideration (feat. SZA)</span></p>
+      </div>
 
-  <div class="modal"  id="timesUpModal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Your time's Up! :)</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <h2>00:00:00</h2>
-        <a href="home.html"><button id="nextSes">Next Session</button></a>
-      </section>
     </div>
-  </div>
-  
-  <script src="music.js"></script>
-  <script src="navTimer.js"></script>
+    <!-- </body> -->
 
-<!--   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+    <div class="modal" id="timesUpModal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Your time's Up! :)</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <h2 class="title is-center">00:00:00</h2>
+          <a href="home.html"><button id="nextSes">Next Session</button></a>
+        </section>
+      </div>
+    </div>
+
+    <!-- WARNING: DO NOT SWITCH THE ORDER
+    Have to call navTimer.js first to avoid
+    overwriting the window.onload. -->
+    <script src="navTimer.js"></script>
+    <script src="music.js"></script>
+
+    <!--   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
 </body>
 
 </html>

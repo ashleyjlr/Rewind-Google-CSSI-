@@ -16,6 +16,7 @@ html, body {
   width 100% vh;
   margin: 0;
   background-color: #92B4A7;
+/*   background-color: transparent; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +86,11 @@ html, body {
 #welcome_section{
   height: 100vh;
   width: 100%;
-  background-color: #92B4A7;
+/*   background-color: #92B4A7; */
+/*   background-image: url('https://cdnb.artstation.com/p/assets/images/images/036/271/507/original/bizarre-beasties-snow.gif?1617197303'); */
+/*   background-image: url('https://thumbs.gfycat.com/CanineIdleFirecrest-max-1mb.gif'); */
+  background-image: url('https://media0.giphy.com/media/pI43YlhMoPqsE/giphy.gif?cid=ecf05e47x409y56vj68hhg7aya961ie80pstxm1g4tvyt7rz&rid=giphy.gif&ct=g');
+  background-repeat: no-repeat;
   color: white;
   z-index: 1;
 /*   top: 0;

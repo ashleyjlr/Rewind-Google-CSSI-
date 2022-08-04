@@ -60,15 +60,14 @@
       <button id="relax" class="button is-rounded theButtons"><img id="iicon" src="https://static.thenounproject.com/png/587745-200.png"> Break</button>
       </div>
       
-      <div id="countdown_timer">00:00:00</div>
+      <div id="countdown_timer" style="color: white;">00:00:00</div>
     
       <div id="editButtons">
 <!--         <button id="pause" class="button is-rounded theButtons"><img id="icon" src="http://cdn.onlinewebfonts.com/svg/img_269321.png"> Pause</button>
       <button id="resume" class="button is-rounded theButtons"><img id="icon" src="https://cdn0.iconfinder.com/data/icons/bold-multimedia-player-button/512/media_player_button_8-512.png"> Resume</button> -->
         <a href="home.html"><button id="replayButton"><img id="replayImg" src="https://cdn.iconscout.com/icon/free/png-256/replay-20-470364.png"></button></a>
       </div>
-    
-      <p id="firstTime">First time here? Customize your <a href="settings.html">Settings</a> to personalize your Rewind experience! You can also <a href="">sign up</a> to save your preferences.</p> 
+      <p id="firstTime" style="color: white;">First time here? Customize your <a href="settings.html" style="color: rgb(193, 228, 245); font-weight: bold;">Settings</a> to personalize your Rewind experience! You can also <a href="" style="color: rgb(193, 228, 245); font-weight: bold;">sign up</a> to save your preferences.</p> 
     </div>
   </section>
 <!--   <section>
@@ -115,8 +114,8 @@
   	</div>
     <div>
       <div class="text-section text-section2">
-        <h4 class="small2">Introducing the</h4>
-        <h1 class="big2"><strong>Pomodoro Technique</strong></h1>
+        <h4 class="small2">Introducing the</h4> 
+        <h1 class="big2"><strong><img id="starGif" src="https://i.pinimg.com/originals/b7/f8/ab/b7f8abb22343a3aa3aabcb2afeed1a63.gif">Pomodoro Technique<img id="starGif" src="https://i.pinimg.com/originals/b7/f8/ab/b7f8abb22343a3aa3aabcb2afeed1a63.gif"></strong></h1>
       </div>
       <div class="wrapper wrapper2">
     		<div class="left-side">
@@ -169,7 +168,7 @@
     		<div class="right-side">
           <div class="text-wrapper">
     				<p class="hidden oneee">The Pomodoro Technique introduces the usage of pomodoro intervals.</p><br>
-    				<p class="hidden twooo">Here at <strong>Remind!</strong> (yay, us!), we offer a safe-space where you can keep track of your time. </p><br>
+    				<p class="hidden twooo">Here at <strong>Rewind!</strong> (yay, us!), we offer a safe-space where you can keep track of your time. </p><br>
             <p class="hidden threeee">Once your focus time is over, we have options for you to relax and enjoy your break time. Our features range from <a href="music.html">Music</a>, <a href="games.html">Games</a>, and even resources for <a href="relaxation.html">Relaxation</a>.</p>
     			</div>
     		</div>
@@ -178,7 +177,7 @@
         <p style="text-align: center; font-size: 45px; padding: 10%;" class="enjoy">Enjoy!</p>
       </div>
     </div>
-  	<div class="text-section">
+  	<div class="text-section" id="footer">
   		<p>Thank you for taking a rewind of time!</p>
       <h3>If you made it this far, go ahead, take a break.</h3>
       <h3>Remember the importance of taking breaks and we'll see you soon! :)</h3>
@@ -205,7 +204,7 @@
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <h2>00:00:00</h2>
+        <h2 class="title is-center">00:00:00</h2>
         <a href="home.html"><button id="nextSes">Next Session</button></a>
       </section>
     </div>
@@ -236,7 +235,7 @@
       scrollTrigger: {
         trigger: ".text-section1",
         start: "center bottom",
-        end: "bottom center",
+        end: "80% center",
         scrub: true,
       }
     })
@@ -247,7 +246,7 @@
       scrollTrigger: {
         trigger: ".text-section2",
         start: "center bottom",
-        end: "bottom 70%",
+        end: "80% 70%",
         scrub: true,
       }
     })

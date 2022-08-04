@@ -190,8 +190,8 @@ html, body {
   align-items: center;
   place-items: center;
   text-align: center;
-  height: 50vh;
-  width: 700px;
+  height: 40vh;
+  width: 800px;
   max-width: 80%;
   margin: 0 auto;
   
@@ -233,20 +233,25 @@ html, body {
 
 
 .collapsible {
-  background-color: #eee;
+  background-color: #d6cadd;
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 90%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 30px;
+  margin-left: 95px;
+  border-color:  #4b2d5c;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px
+/*   margin-right: 20px; */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #B6CB9E;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -256,6 +261,10 @@ html, body {
   overflow: hidden;
   background-color: #dce4d8;
   border-radius: 10px;
+/*   margin-left: 80px;
+  margin-right: 90px; */
+  width: 80%;
+  margin-left: 165px;
 }
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -263,6 +272,7 @@ html, body {
   color: white;
   float: right;
   margin-left: 5px;
+  background-color: #d6cadd;
 }
 
 .active:after {
@@ -271,27 +281,33 @@ html, body {
 #collapse{
   margin: 30px;
 }
+.flowers{
+/*   display: flex; */
+  flex: none;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#flower1{
+   flex: none;
+  justify-content: center;
+  text-align: center;
+  margin-top: -290px;
+  
+}
+/* #flower2{
+   flex: none;
+  justify-content: center;
+  text-align: center;
+  
+} */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#gif1{
+  width: 90px;
+  height: auto;
+}
 
 * {box-sizing:border-box}
 
@@ -364,6 +380,7 @@ html, body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
+  margin-bottom: 10px;
 }
 
 .enable, .dots:hover {
@@ -387,7 +404,25 @@ html, body {
   from {opacity: .5}
   to {opacity: 2}
 }
+
 .animalImg{
-  width: 20px;
+margin-top: 50px;
+}
+#videos{
+  justify-content: space-around;
+}
+#video1{
+  justify-content: space-around;
+  display: flex;
+  float: right;
+}
+#video2{
+  justify-content: space-around;
+  display: flex;
+  float: right;
+}
+
+.gifs{
+  width: 60px;
   height: auto;
 }
